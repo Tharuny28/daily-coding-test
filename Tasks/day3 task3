@@ -1,0 +1,24 @@
+package sample;
+
+public class Employee {
+	int id;
+	int salary;
+	public void setsalary(int myid,int mysalary) {
+		if(mysalary<5000) {
+			System.out.println("you get an error");
+	
+		}
+		else {
+			this.salary=mysalary;
+			this.id=myid;
+		}
+	}
+	public int getsalary(){
+		return salary;
+	}
+	public static void main(String[] args) {
+		Employee e1=new Employee();
+		e1.setsalary(10,10000);
+		System.out.println(e1.getsalary());
+	}
+}
